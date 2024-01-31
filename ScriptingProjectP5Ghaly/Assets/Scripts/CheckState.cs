@@ -5,8 +5,6 @@ using UnityEngine;
 public class CheckState : MonoBehaviour
 {
     public GameObject myObject;
-
-
     void Start()
     {
         Debug.Log("Active Self: " + myObject.activeSelf);
