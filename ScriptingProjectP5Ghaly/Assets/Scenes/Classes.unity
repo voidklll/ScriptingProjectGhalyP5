@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!54 &294189049 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4242911301597070941, guid: 9a564a35c742b6a4e9cacaca9e5407b5, type: 3}
+  m_PrefabInstance: {fileID: 6715636645269844220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &722366278
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,9 +270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8358b9a5e00e8c14d9a57421fd8dc90a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 294189049}
   firePosition: {fileID: 752429118}
-  bulletSpeed: 0
+  bulletSpeed: 1000
 --- !u!114 &752429113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,9 +301,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   turnSpeed: 20
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 294189049}
   firePosition: {fileID: 752429118}
-  bulletSpeed: 100
+  bulletSpeed: 1000
 --- !u!65 &752429115
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -474,7 +479,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 19cb60d88302c2c45b9467514572b037, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -514,7 +519,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.043, y: 2.043, z: 2.043}
+  m_LocalScale: {x: 5.4558315, y: 5.4558315, z: 5.4558315}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -635,6 +640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gun
       objectReference: {fileID: 0}
+    - target: {fileID: 4423474043374427539, guid: 9a564a35c742b6a4e9cacaca9e5407b5, type: 3}
+      propertyPath: firePosition
+      value: 
+      objectReference: {fileID: 752429118}
     - target: {fileID: 7655641008084508932, guid: 9a564a35c742b6a4e9cacaca9e5407b5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
